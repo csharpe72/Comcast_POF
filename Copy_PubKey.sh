@@ -10,3 +10,5 @@ for HOST in `cat ${SERVERS}` do;
   ${SSH_KEYGEN} -t rsa -N "" -f ${KEY_FILE}
   ${SSH_COPY} -i ${KEY_FILE} ${USER}@${HOST}:~/.ssh/authrorized_keys
 done
+
+
